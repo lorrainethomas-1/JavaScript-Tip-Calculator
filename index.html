@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Tip Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Sansita+Swashed&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+        <h1>Tip Calculator</h1>
+        <hr>
+
+        <div>
+            <label><b>Bill Total:</b></label>
+            <input type="text" placeholder="Enter bill total..." id="billTotal">
+        </div>
+
+        <div>
+            <label><b>Tip: </b></label>
+            <input type="range" min= "0" max="100" value="0" id="tipInput">
+            <span id="tipOutput"></span>
+        </div>
+
+        <div>
+            <label><b>Split (# of people)</b></label>
+            <input type="range" min="1" max="25" value="1" id="splitInput">
+            <span id="splitOutput"></span>
+        </div>
+        <hr>
+
+        <div>
+            <div>
+                <label><i>Bill (+ tip):</i></label><span id="newBill"></span>
+            </div>
+            <div>
+                <label><i>Tip (per person):</i></label><span id="tipEach"></span>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
